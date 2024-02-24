@@ -1,6 +1,6 @@
 (sym_lib_table
   (version 7)
-  (lib (name "USBC")(type "KiCad")(uri "${KIPRJMOD}/library/USBC/USB4105-GF-A.kicad_sym")(options "")(descr ""))
+  (lib (name "USBC")(type "KiCad")(uri "${KIPRJMOD}/library/USBC/USB4085-GF-A_REVB.kicad_sym")(options "")(descr ""))
   (lib (name "TVS")(type "KiCad")(uri "${KIPRJMOD}/library/TVS Diode/KiCADv6/2024-01-12_04-08-03.kicad_sym")(options "")(descr ""))
   (lib (name "Charger")(type "KiCad")(uri "${KIPRJMOD}/library/Charger/KiCADv6/2024-01-12_04-41-16.kicad_sym")(options "")(descr ""))
   (lib (name "5v Reg")(type "KiCad")(uri "${KIPRJMOD}/library/5v Reg/TPS613222ADBVR.kicad_sym")(options "")(descr ""))

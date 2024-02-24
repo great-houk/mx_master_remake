@@ -882,6 +882,10 @@
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 9200c1a5-040c-415f-af43-aeabdf4ee286)
   )
+  (hierarchical_label "LMB" (shape output) (at 236.22 121.92 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 9e28045f-0ef4-474a-a662-a012098c896b)
+  )
   (hierarchical_label "VBAT" (shape input) (at 88.9 109.22 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid a03ab645-a1dc-4539-bc6a-8756a03723be)
@@ -1013,7 +1017,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 193.04 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0673572a-10bf-46dd-bf2e-e73d7e41f72e)
-    (property "Reference" "SW1" (at 193.04 77.47 0)
+    (property "Reference" "SW2" (at 193.04 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "BTN_BOTTOM" (at 193.04 80.01 0)
@@ -1030,7 +1034,7 @@
     (instances
       (project "mx_master_remake"
         (path "/9f33ee32-6710-4e85-aa53-7616de099ddc/9fc647be-1efb-465b-ba45-8835cb03c883"
-          (reference "SW1") (unit 1)
+          (reference "SW2") (unit 1)
         )
       )
     )
@@ -1056,6 +1060,32 @@
       (project "mx_master_remake"
         (path "/9f33ee32-6710-4e85-aa53-7616de099ddc/9fc647be-1efb-465b-ba45-8835cb03c883"
           (reference "#PWR056") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:C_Small") (at 238.76 121.92 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 15abb6fb-750d-4381-a739-edcd854fe575)
+    (property "Reference" "C16" (at 241.3 119.38 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "0.1uF" (at 236.22 119.38 90)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (at 238.76 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 238.76 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5f7cf51d-fab4-4eef-9ffe-9b1ae21ed96b))
+    (pin "2" (uuid 5482afdb-ec94-475e-b84a-23d192ad5653))
+    (instances
+      (project "mx_master_remake"
+        (path "/9f33ee32-6710-4e85-aa53-7616de099ddc/9fc647be-1efb-465b-ba45-8835cb03c883"
+          (reference "C16") (unit 1)
         )
       )
     )
@@ -1365,6 +1395,31 @@
       (project "mx_master_remake"
         (path "/9f33ee32-6710-4e85-aa53-7616de099ddc/9fc647be-1efb-465b-ba45-8835cb03c883"
           (reference "#PWR034") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 241.3 121.92 90) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 5c42d7ca-fe84-4109-a0b0-981e6b895f3a)
+    (property "Reference" "#PWR057" (at 247.65 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 245.11 121.9199 90)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "" (at 241.3 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 241.3 121.92 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid dd9c2618-460f-42fc-b68b-917a0882517e))
+    (instances
+      (project "mx_master_remake"
+        (path "/9f33ee32-6710-4e85-aa53-7616de099ddc/9fc647be-1efb-465b-ba45-8835cb03c883"
+          (reference "#PWR057") (unit 1)
         )
       )
     )
@@ -1735,7 +1790,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 193.04 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 972ff07b-3408-4881-9cd5-8158bc9071d2)
-    (property "Reference" "SW2" (at 193.04 90.17 0)
+    (property "Reference" "SW3" (at 193.04 90.17 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "BTN_WHEEL" (at 193.04 92.71 0)
@@ -1752,7 +1807,7 @@
     (instances
       (project "mx_master_remake"
         (path "/9f33ee32-6710-4e85-aa53-7616de099ddc/9fc647be-1efb-465b-ba45-8835cb03c883"
-          (reference "SW2") (unit 1)
+          (reference "SW3") (unit 1)
         )
       )
     )
@@ -1761,7 +1816,7 @@
   (symbol (lib_id "Switch:SW_Push") (at 193.04 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 97ad9409-0c2d-47bd-9e9d-a20ca7ae8590)
-    (property "Reference" "SW3" (at 193.04 102.87 0)
+    (property "Reference" "SW4" (at 193.04 102.87 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "RMB" (at 193.04 105.41 0)
@@ -1778,7 +1833,7 @@
     (instances
       (project "mx_master_remake"
         (path "/9f33ee32-6710-4e85-aa53-7616de099ddc/9fc647be-1efb-465b-ba45-8835cb03c883"
-          (reference "SW3") (unit 1)
+          (reference "SW4") (unit 1)
         )
       )
     )

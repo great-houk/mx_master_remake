@@ -17,4 +17,5 @@
   (lib (name "USBC")(type "KiCad")(uri "${KIPRJMOD}/library/USBC")(options "")(descr ""))
   (lib (name "Bottom Button")(type "KiCad")(uri "${KIPRJMOD}/library/Bottom Button/button.pretty")(options "")(descr ""))
   (lib (name "JSTZH")(type "KiCad")(uri "${KIPRJMOD}/library/JSTZH/JSTZH.pretty")(options "")(descr ""))
+  (lib (name "Inductor")(type "KiCad")(uri "${KIPRJMOD}/library/Inductor/KiCADv6/footprints.pretty")(options "")(descr ""))
 )
